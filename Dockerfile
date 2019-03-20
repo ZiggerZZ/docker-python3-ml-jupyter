@@ -29,19 +29,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Install Python3 general packages.
 RUN pip3 install --upgrade pip \
-        numpy \
-        scipy \
+        # numpy \
+        # scipy \
         pandas \
-        sklearn \
+        # sklearn \
         ipykernel \
         jupyter \
         notedown \
         matplotlib \
         seaborn \
-        Cython \
-        Pillow \
+        # Cython \
+        # Pillow \
         requests \
-        awscli \
+        # awscli \
         && \
     python3 -m ipykernel.kernelspec
 
