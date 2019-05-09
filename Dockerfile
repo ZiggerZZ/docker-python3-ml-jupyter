@@ -9,3 +9,6 @@ RUN pip install --upgrade pip \
         nltk \
         gensim==3.7.3 \
         pyldavis
+
+# Copy sample notebooks.
+COPY notebooks /notebooks
