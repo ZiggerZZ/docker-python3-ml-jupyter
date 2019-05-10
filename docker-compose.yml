@@ -1,0 +1,9 @@
+version: '1'
+services:
+  web:
+    build: .
+    image: docker-ml:latest
+    ports:
+     - "10000:8888"
+    volumes:
+     - ./notebooks:/notebooks
